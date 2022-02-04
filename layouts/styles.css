@@ -1,0 +1,274 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 78, 56);
+}
+
+
+.home {
+    display: flex;
+    background: url(img/family11.jpg)no-repeat;
+    background-size: cover;
+    height: 130vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+.home .max-widths {
+    margin: 300px 0 auto 70px
+}
+
+.greens {
+    color: rgb(0, 78, 56);
+}
+
+.greensb{
+    background-color: rgb(0, 78, 56);
+}
+
+.margin-setting {
+    margin-top: 60px;
+    padding: 0;
+}
+.mint-green {
+    background-color: rgb(223, 238, 235);
+}
+.sec-page-set {
+    background-color: rgb(245, 248, 247);
+    margin-top: -100;
+    height: 110vh;
+}
+.calc-width {
+    width: 100%;
+    height: 100px;
+}
+.img-width {
+    width: 500px;
+    height: 400px;
+    margin: 60px;
+    border-radius: 10px;
+}
+.img-width2 {
+    width: 600px;
+    height: 300px;
+    margin: 80px 5px 0 80px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.about-para {
+    line-height: 25px;
+    
+}
+.measure {
+    max-width: 15em;
+   
+}
+.bord-rad {
+    border: 1px solid rgb(219, 236, 219);
+    border-radius: 4px;
+}
+.list {
+    margin-right:15px;
+}
+.third-page-set {
+    background-color: rgb(200, 207, 200);;
+    height: 100vh;
+    
+}
+.mag-set-third{
+    padding: 100px 50px;
+    line-height: 50px;
+}
+.line-third {
+    line-height: 30px;
+   
+}
+.seperate {
+    margin-top: 40px;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(0, 78, 56);
+    width: 100px;
+    padding-bottom: 10px;
+}
+.bar-set {
+    margin-top: 150px;
+}
+.per-width {
+    width: 70%;
+    margin-right: -50px;
+    margin-top: 40px;
+    padding: 20px
+}
+.fourth-page {
+    background-color: rgb(249, 252, 249);
+    height: 180vh;
+}
+.centers {
+    display: flex;
+    justify-content: center;
+}
+.fourth-col {
+	background-color: rgb(249, 252, 249);
+}
+.left-side {
+
+align-content: left;
+}
+.btn-width {
+	width: 50%;
+}
+.fifth-page {
+	background-color: rgb(165, 179, 165);
+    height: 80vh;
+}
+.pic-size {
+	width: 600px;
+	height: 500px;
+	object-fit: cover;
+}
+.last-page {
+	background-color: rgb(0, 78, 56);
+    height: 90vh;
+	color: white;
+}
+.white-text {
+	color: white;
+}
+.trans {
+	z-index: 999;
+}
+/* for bar chart */
+
+.graph {
+	margin-bottom:1em;
+    font:normal 100%/150% arial,helvetica,sans-serif;
+}
+
+.graph caption {
+	font:bold 150%/120% arial,helvetica,sans-serif;
+	padding-bottom:0.33em;
+}
+
+.graph tbody th {
+	text-align:right;
+}
+
+@supports (display:grid) {
+
+	@media (min-width:32em) {
+
+		.graph {
+			display:block;
+      width:600px;
+      height:300px;
+		}
+
+		.graph caption {
+			display:block;
+		}
+
+		.graph thead {
+			display:none;
+		}
+
+		.graph tbody {
+			position:relative;
+			display:grid;
+			grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+			column-gap:2.5%;
+			align-items:end;
+			height:100%;
+			padding:0 1em;
+			
+			
+		}
+
+		/* .graph tbody:before,
+		.graph tbody:after {
+			position:absolute;
+			left:-3.2em;
+			width:2.8em;
+			text-align:right;
+			font:bold 80%/120% arial,helvetica,sans-serif;
+		} */
+
+		.graph tbody:before {
+			/* content:"100%"; */
+			top:-0.6em;
+		}
+
+		.graph tbody:after {
+			/* content:"0%"; */
+			bottom:-0.6em;
+		}
+
+		.graph tr {
+			position:relative;
+			display:block;
+		}
+
+		.graph tr:hover {
+			z-index:999;
+		}
+
+		.graph th,
+		.graph td {
+			display:block;
+			text-align:center;
+		}
+
+		.graph tbody th {
+			position:absolute;
+			top:-3em;
+			left:0;
+			width:100%;
+			font-weight:normal;
+			text-align:center;
+      white-space:nowrap;
+			text-indent:0;
+			transform:rotate(-45deg);
+		}
+
+		.graph tbody th:after {
+			content:"";
+		}
+
+		.graph td {
+			width:100%;
+			height:100%;
+			background:rgb(0, 78, 56);
+			border-radius:0.5em 0.5em 0 0;
+			transition:background 0.5s;
+		}
+
+		.graph tr:hover td {
+			opacity:0.7;
+		}
+
+		.graph td span {
+			overflow:hidden;
+			position:absolute;
+			left:50%;
+			top:50%;
+			width:0;
+			padding:0.5em 0;
+			margin:-1em 0 0;
+			font:normal 85%/120% arial,helvetica,sans-serif;
+/* 			background:white; */
+/* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
+			font-weight:bold;
+			opacity:0;
+			transition:opacity 0.5s;
+      color:white;
+		}
+
+		.toggleGraph:checked + table td span,
+		.graph tr:hover td span {
+			width:4em;
+			margin-left:-2em; /* 1/2 the declared width */
+			opacity:1;
+		}
+
+    }
+}
