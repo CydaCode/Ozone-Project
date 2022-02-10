@@ -21,6 +21,9 @@
 .b-radius {
 	border-radius: 4px;
 }
+.bo {
+	border: none;
+}
 
 /* Home setting */
 .home {
