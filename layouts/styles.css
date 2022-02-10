@@ -3,9 +3,26 @@
     margin: 0;
     padding: 0;
     color: rgb(0, 78, 56);
+	font-family:'Times New Roman', Times, serif
+}
+/* nav settings */
+.bg-primary {
+	background-color: rgb(0, 78, 56) !important;
+}
+.text-white {
+	color: white !important;
+}
+.bg-white {
+	background-color: white !important;
+}
+.text-primary {
+	color: rgb(0, 78, 56) !important;
+}
+.b-radius {
+	border-radius: 4px;
 }
 
-
+/* Home setting */
 .home {
     display: flex;
     background: url(img/family11.jpg)no-repeat;
